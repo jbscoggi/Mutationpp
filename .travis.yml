@@ -96,6 +96,7 @@ install:
   - python scripts/install_dependencies.py -j 1
 
 before_script:
+  - export CXX=${COMPILER}
   - cmake -H. -Bbuild-debug -DCMAKE_BUILD_TYPE=Debug -DENABLE_TESTING=1 -DENABLE_COVERAGE={COVERAGE}
   - cmake -H. -Bbuild-release -DCMAKE_BUILD_TYPE=Release -DENABLE_TESTING=1
 

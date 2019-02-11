@@ -178,8 +178,8 @@ endif()
 
 list(APPEND LCOV_REMOVE_PATTERNS 
     "/usr/*"
-    "'${PROJECT_SOURCE_DIR}/tests/*'"
-    "'${PROJECT_SOURCE_DIR}/install/*'"
-    "'${PROJECT_SOURCE_DIR}/thirdparty/*'"
+    "'*/tests/*'"
+    "'*/install/*'"
+    "'*/thirdparty/*'"
 )
 coverage_evaluate()
